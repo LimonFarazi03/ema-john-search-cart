@@ -14,7 +14,7 @@ const Shop = () => {
     }, []);
 
     const handleAddToCart = (product) =>{
-        console.log(product);
+        // console.log(product);
         // do not do this: cart.push(product);
         const newCart = [...cart, product];
         setCart(newCart);
@@ -32,7 +32,7 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart cart={cart.length}></Cart>
+                <Cart cart={cart}></Cart>
             </div>
         </div>
     );
